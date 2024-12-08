@@ -93,11 +93,11 @@ for %%f in ("*.mp4" "*.mp3" "*.wav" "*.mkv" "*.avi") do (
     echo [%time%] Processing: %%f
     echo [%time%] Executing command:
     if "!LANG!"=="none" (
-        echo whisper "%%f" --model large --task translate --output_format srt --logprob_threshold -0.5 --no_speech_threshold 0.5
-        whisper "%%f" --model large --task translate --output_format srt --logprob_threshold -0.5 --no_speech_threshold 0.5
+        echo whisper "%%f" --model large --task translate --output_format srt --logprob_threshold -0.7 --no_speech_threshold 0.7
+        whisper "%%f" --model large --task translate --output_format srt --logprob_threshold -0.7 --no_speech_threshold 0.7
     ) else (
-        echo whisper "%%f" --model large --task translate --language !LANG! --output_format srt --logprob_threshold -0.5 --no_speech_threshold 0.5
-        whisper "%%f" --model large --task translate --language !LANG! --output_format srt --logprob_threshold -0.5 --no_speech_threshold 0.5
+        echo whisper "%%f" --model large --task translate --language !LANG! --output_format srt --logprob_threshold -0.7 --no_speech_threshold 0.7
+        whisper "%%f" --model large --task translate --language !LANG! --output_format srt --logprob_threshold -0.7 --no_speech_threshold 0.7
     )
    
     if !errorlevel! neq 0 (
