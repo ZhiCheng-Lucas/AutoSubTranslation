@@ -40,6 +40,7 @@ REM Check Whisper installation
 pip show whisper > nul 2>&1
 if %errorlevel% neq 0 (
     echo Whisper not found. Installing Whisper...
+    echo This may take a few minutes...
     pip install git+https://github.com/openai/whisper.git
     if !errorlevel! neq 0 (
         echo Failed to install Whisper. Please check your internet connection and try again.
@@ -86,7 +87,7 @@ set "processed_count=0"
 set "error_count=0"
 
 REM Process files based on language input
-for %%f in (*.mp4 *.mp3 *.wav *.mkv *.avi) do (
+for %%f in ("*.mp4" "*.mp3" "*.wav" "*.mkv" "*.avi") do (
     echo.
     echo [%time%] Processing: %%f
     echo [%time%] Executing command:

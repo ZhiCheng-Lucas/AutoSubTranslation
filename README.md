@@ -19,17 +19,16 @@ The primary objective of AutoSubTranslation is to provide users with a seamless 
 
 3. Install FFmpeg using Chocolatey (Recommended):
    
-   First, install Chocolatey:
-
-    See https://chocolatey.org/install for the latest instructions:
-
+   A. Install Chocolatey first:
    - Open PowerShell as Administrator
-   - Execute the following command:
+   - Visit https://chocolatey.org/install for the latest instructions
+   - Copy and execute the installation command on the website. You should see something like 
    ```powershell
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
    ```
-   
-   Then, install FFmpeg:
+
+   B. Then install FFmpeg:
+   Restart your computer and run    
    ```powershell
    choco install ffmpeg
    ```
@@ -118,6 +117,12 @@ Whisper supports the following languages and their codes. You can use either the
 ```
 
 
+## Future Work
+
+### Performance Documentation
+
+### Usage Examples
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -126,7 +131,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 This tool uses the following open-source components:
 - [OpenAI Whisper](https://github.com/openai/whisper)
-- [FFmpeg](https://ffmpeg.org)
+- [FFmpeg](https://www.ffmpeg.org/)
 
 ## Support
 
