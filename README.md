@@ -47,7 +47,7 @@ The script will automatically handle the installation of OpenAI's Whisper model 
 2. Double-click `generate_subtitles.bat` to run the script
 3. When prompted, you can:
    - Press Enter for automatic language detection
-   - Enter a specific language code (e.g., 'ja' for Japanese, 'ko' for Korean)
+   - Enter a specific language code (e.g., 'ja' for Japanese, 'ko' for Korean) (See below for a detailed list)
 4. The script will process all supported media files in the directory and generate corresponding SRT files
 
 ### Supported Language Codes
@@ -84,6 +84,39 @@ whisper --help
 4. "No compatible media files found"
    - Ensure media files are in the same directory as the script
    - Verify files have supported extensions (.mp4, .mp3, .wav, .mkv, .avi)
+
+
+## Appendix: Supported Languages
+
+Whisper supports the following languages and their codes. You can use either the language code or the full name when prompted:
+
+```
+{
+    af, am, ar, as, az, ba, be, bg, bn, bo, br, bs, ca, cs, cy, da, de, el, 
+    en, es, et, eu, fa, fi, fo, fr, gl, gu, ha, haw, he, hi, hr, ht, hu, hy,
+    id, is, it, ja, jw, ka, kk, km, kn, ko, la, lb, ln, lo, lt, lv, mg, mi,
+    mk, ml, mn, mr, ms, mt, my, ne, nl, nn, no, oc, pa, pl, ps, pt, ro, ru,
+    sa, sd, si, sk, sl, sn, so, sq, sr, su, sv, sw, ta, te, tg, th, tk, tl,
+    tr, tt, uk, ur, uz, vi, yi, yo, yue, zh,
+    
+    Afrikaans, Albanian, Amharic, Arabic, Armenian, Assamese, Azerbaijani,
+    Bashkir, Basque, Belarusian, Bengali, Bosnian, Breton, Bulgarian, Burmese,
+    Cantonese, Castilian, Catalan, Chinese, Croatian, Czech, Danish, Dutch,
+    English, Estonian, Faroese, Finnish, Flemish, French, Galician, Georgian,
+    German, Greek, Gujarati, Haitian, Haitian Creole, Hausa, Hawaiian, Hebrew,
+    Hindi, Hungarian, Icelandic, Indonesian, Italian, Japanese, Javanese,
+    Kannada, Kazakh, Khmer, Korean, Lao, Latin, Latvian, Letzeburgesch,
+    Lingala, Lithuanian, Luxembourgish, Macedonian, Malagasy, Malay, Malayalam,
+    Maltese, Mandarin, Maori, Marathi, Moldavian, Moldovan, Mongolian, Myanmar,
+    Nepali, Norwegian, Nynorsk, Occitan, Panjabi, Pashto, Persian, Polish,
+    Portuguese, Punjabi, Pushto, Romanian, Russian, Sanskrit, Serbian, Shona,
+    Sindhi, Sinhala, Sinhalese, Slovak, Slovenian, Somali, Spanish, Sundanese,
+    Swahili, Swedish, Tagalog, Tajik, Tamil, Tatar, Telugu, Thai, Tibetan,
+    Turkish, Turkmen, Ukrainian, Urdu, Uzbek, Valencian, Vietnamese, Welsh,
+    Yiddish, Yoruba
+}
+```
+
 
 ## License
 
