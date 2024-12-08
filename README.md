@@ -4,7 +4,7 @@ A streamlined batch script for automated subtitle generation and translation usi
 
 ## Overview
 
-This tool automates the process of generating subtitles from video and audio files using OpenAI's Whisper speech recognition model. It supports automatic language detection and specific language targeting, making it particularly useful for processing content in various languages.
+This tool automates the process of generating subtitles from video and audio files using OpenAI's Whisper speech recognition model. It supports automatic language detection and specific language targeting.
 
 The primary objective of AutoSubTranslation is to provide users with a seamless "plug and play" experience. Users simply place their video files in a designated folder and execute a batch file, which automatically processes the content and generates accurate SRT subtitle files in the corresponding languages.
 
