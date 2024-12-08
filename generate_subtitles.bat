@@ -77,6 +77,7 @@ if %errorlevel% neq 0 (
 REM Language selection prompt
 echo Enter target language for translation, or press Enter for automatic detection
 echo For supported languages, please visit the Github repository.
+set "LANG=none"
 set /p "LANG="
 
 echo.
@@ -91,14 +92,14 @@ for %%f in ("*.mp4" "*.mp3" "*.wav" "*.mkv" "*.avi") do (
     echo.
     echo [%time%] Processing: %%f
     echo [%time%] Executing command:
-    if "!LANG!"=="" (
+    if "!LANG!"=="none" (
         echo whisper "%%f" --model large --task translate --output_format srt --logprob_threshold -0.5 --no_speech_threshold 0.5
         whisper "%%f" --model large --task translate --output_format srt --logprob_threshold -0.5 --no_speech_threshold 0.5
     ) else (
         echo whisper "%%f" --model large --task translate --language !LANG! --output_format srt --logprob_threshold -0.5 --no_speech_threshold 0.5
         whisper "%%f" --model large --task translate --language !LANG! --output_format srt --logprob_threshold -0.5 --no_speech_threshold 0.5
     )
-    
+   
     if !errorlevel! neq 0 (
         echo [%time%] Error processing "%%f". Continuing with next file...
         set /a "error_count+=1"
