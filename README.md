@@ -123,9 +123,9 @@ Whisper supports the following languages and their codes. You can use either the
 ## Future Work
 
 ### Performance Documentation
-
+- Todo
 ### Usage Examples
-
+- Todo
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
