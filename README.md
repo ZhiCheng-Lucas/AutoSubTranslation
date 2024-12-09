@@ -43,7 +43,7 @@ The script will automatically handle the installation of OpenAI's Whisper model 
 ## Usage
 
 Please note that while this tool can run on systems with only CPU processing, 
-a CUDA-enabled NVIDIA GPU is strongly recommended for optimal performance.
+a CUDA-enabled NVIDIA GPU is recommended for faster performance.
 
 1. Place the script in the same directory as your video/audio files
 2. Double-click `generate_subtitles.bat` to run the script
